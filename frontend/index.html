@@ -1,57 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>TODO APP | RohitLaishram</title>
-</head>
-<body>
-    <div class="todo">    
-        <div class="heading">
-            <h1 class="topic">TODO</h1>
-            <img src="icons/sun-regular.svg" alt="" class="light">
-        </div>
-        <div class="create">
-            <img src="icons/plus-solid.svg" alt="" class="createicon" >
-            <input type="text" placeholder="Create a new Todo.." class="inputcreate">
-            <button>Add Todo..</button>
-        </div>
-       <div class="todoslist">
-            <div class="container">
-                <input type="checkbox" name="" id="check">
-                <p>Complete Javascript</p>
-            </div>
-            <div class="container">
-                <input type="checkbox" name="" id="check">
-                <p>Play Mobile legends</p>
-            </div>
-            <div class="container">
-                <input type="checkbox" name="" id="check">
-                <p>Sleeps 10hrs per day</p>
-            </div>
-            <div class="container">
-                <input type="checkbox" name="" id="check">
-                <p>Play football</p>
-            </div>
-            <div class="container">
-                <input type="checkbox" name="" id="check">
-                <p>Lairik ti kona twrasu Yai</p>
-            </div>
-       </div>
-            <div class="bottomBar">
-                <div class="itemsleft">4 items left</div>
-                <div class="link">
-                    <a href="">All</a>
-                    <a href="">Active</a>
-                    <a href="">Completed</a>
-                </div>
-                <div class="clear">Clear completed</div>
-            </div>
-        </div>
+    <title>TodoApp</title>
 
-        <div class="drag">drag and drop to reorder list</div>
-    </div>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Task List | Rohit</h1>
+        <form action="" id="new-task-form">
+            <input type="text" id="new-task-input" placeholder="What do you have a planned? " autocomplete="off"/>
+            <input type="submit" id="new-task-submit" value="Add task">
+        </form>
+    </header>
+    <main>
+        <section class="task-list">
+            <h2>Tasks</h2>
+            <div id="tasks">
+                <!-- <div class="task">
+                    <div class="content">
+                        <input type="text" name="" id="" class="text" value="My shiny task" readonly>
+                    </div>
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    </main>
 </body>
-</html>
+    <script src="main.js"></script>
+</html> 
